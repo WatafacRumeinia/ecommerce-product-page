@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="./js/script.js" defer></script>
+</head>
+<body>
+  <main class="main-container">
+
+      <header class="hdr-container">
+        <div class="left-container-header">
+          <div class="hide-show-menu-container">
+            <div id="hide-show"></div>
+          </div>
+          <div class="logo"><img src="./images/logo.svg" alt="Sneckers"></div>
+          <div class="toggle-menu">
+            <a href="" class="links">Collections</a>
+            <a href="" class="links">Men</a>
+            <a href="" class="links">Women</a>
+            <a href="" class="links">About</a>
+            <a href="" class="links">Contact</a>
+          </div>
+        </div>
+        <div class="right-container-header">
+          <div class="cart-container r-items">
+            <img src="./images/icon-cart.svg" alt="Cart">
+          </div>
+          <div class="profile r-items">
+            <img src="./images/image-avatar.png" alt="Profile picture"  width="30px">
+          </div>
+        </div>
+      </header>
+
+      <div class="main-container">
+        <section class="images">
+        </section>
+        <section class="info-container">
+          <h5 id="brand-name">SNEAKER COMPANY</h5>
+          <h1 class="title">Fall Limited Edition Sneakers</h1>
+          <p class="description">
+            These low-profile sneakers are your perfect casual wear companion. Featuring a
+            durable rubber outer sole, the’ll withstand everything the weather can offer.
+          </p>
+          <div class="price-continer">
+            <h2 id="price">$125.00</h2>
+            <div id="discount-box">50%</div>
+          </div>
+          <strike><p>$250.00</p></strike>
+          <div class="nr-of-items">
+            <div class="minus-nr-plus"><img src="./images/icon-minus.svg" alt="Minus"></div>
+            <div class="minus-nr-plus" id="num">0</div>
+            <div class="minus-nr-plus"><img src="./images/icon-plus.svg" alt="Plus"></div>
+          </div>
+          <button id="addToCart"><img src="./images/icon-cart.svg" alt="Add to cart"> Add to cart</button>
+        </section>
+      </div>
+
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Neculaiu Cosmin</a>.
+  </div>
+</body>
+</html>
