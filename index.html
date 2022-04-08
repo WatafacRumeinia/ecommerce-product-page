@@ -15,7 +15,7 @@
 
       <header class="hdr-container">
         <div class="left-container-header">
-          <div class="hide-show-menu-container">
+          <div class="hide-show-menu-container" onclick="menu()">
             <div class="hide-show"></div>
           </div>
           <div class="logo"><img src="./images/logo.svg" alt="Sneckers"></div>
@@ -30,7 +30,7 @@
           </div>
         </div>
         <div class="right-container-header">
-          <div class="cart-container r-items">
+          <div class="cart-container r-items" onclick="cartToggle()">
             <img src="./images/icon-cart.svg" alt="Cart">
           </div>
           <div class="profile r-items">
@@ -38,10 +38,18 @@
           </div>
         </div>
       </header>
+      <div class="cart active">
+        <div class="cart-title">
+          <h3>Cart</h3>
+        </div>
+        <div class="cart-content-container">
 
+        </div>
+      </div>
       <div class="main-container">
         <section class="lightbox">
           <div class="lightbox-wrapper">
+
             <div class="prev-next-container prev">
               <img src="./images/icon-previous.svg" alt="previous">
             </div>
@@ -85,9 +93,9 @@
             </div>
           </div>
           <div class="nr-of-items">
-            <div class="minus-nr-plus"><img src="./images/icon-minus.svg" alt="Minus"></div>
+            <div class="minus-nr-plus minus" onclick="decrement()"><img src="./images/icon-minus.svg" alt="Minus"></div>
             <div class="minus-nr-plus" id="num">0</div>
-            <div class="minus-nr-plus"><img src="./images/icon-plus.svg" alt="Plus"></div>
+            <div class="minus-nr-plus plus" onclick="increment()"><img src="./images/icon-plus.svg" alt="Plus"></div>
           </div>
           <button id="addToCart">
             <img src="./images/icon-cart-white.svg" id="white-cart" alt="Add to cart"> 

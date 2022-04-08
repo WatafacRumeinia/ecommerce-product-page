@@ -111,6 +111,29 @@ body{
     align-items: center;
 }
 
+.cart{
+    display: none;
+}
+.cart.active{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: var(--white);
+    display: block;
+    margin:10px auto;
+    right: 0;
+    left: 0;
+    width: 90vw;
+    height: 300px;
+    position: absolute;
+    z-index: 10;
+}
+.cart-title{
+    display: grid;
+    border-bottom: 1px solid var(--grayish-blue);
+    align-items: center;
+    height: 5rem;
+    padding: 1.5rem;
+}
 
 .all-photos{
     display: none;
@@ -201,7 +224,6 @@ body{
     justify-content: space-between;
     margin: 1rem 0;
     padding: 1.5rem;
-
 }
 
 #addToCart{
@@ -219,4 +241,3 @@ body{
     padding: 1.5rem;
     width: 100%;
 }
-
