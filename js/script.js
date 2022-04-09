@@ -34,30 +34,19 @@ minus.addEventListener("click", () => {
 
 let cartEmpty = true;
 function itemsInCart(param) {
-    let emptyElement=document.createElement("div");
-    emptyElement.classList.add("empty-card");
-    emptyElement.innerText="Your cart is empty.";
-    if (cartEmpty == true) {
-        if(param==false){
-            try {
-                document.querySelector(".cart-content-container").appendChild(emptyElement);
-                
-            } catch (error) {
-                console.log(error)
-            }
-        }
-        else {
-            try {
-                document.querySelector(".cart-content-container").remove(document.querySelectorAll(".empty-card"));
-                
-            } catch (error) {
-                console.log(error)
-            }
-        }
+  let emptyElement = document.createElement("div");
+  let parentElem=document.querySelector(".cart-content-container");
+  emptyElement.classList.add("empty-card");
+  emptyElement.innerText = "Your cart is empty.";
+  if (cartEmpty == true) {
+    if (param == false) {
+        parentElem.append(emptyElement);
+    } else {
+
+        parentElem.remove(document.querySelectorAll(".empty-card"));
     }
+  }
 }
-
-
 
 const toggleCart = document.querySelector(".cart-container");
 const cart = document.querySelector(".cart");
@@ -70,7 +59,5 @@ toggleCart.addEventListener("click", () => {
     itemsInCart(true);
   }
 });
-
-
 
 function addToCart() {}
