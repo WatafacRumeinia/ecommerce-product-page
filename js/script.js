@@ -35,15 +35,14 @@ minus.addEventListener("click", () => {
 let cartEmpty = true;
 function itemsInCart(param) {
   let emptyElement = document.createElement("div");
-  let parentElem=document.querySelector(".cart-content-container");
+  let parentElem = document.querySelector(".cart-content-container");
   emptyElement.classList.add("empty-card");
   emptyElement.innerText = "Your cart is empty.";
   if (cartEmpty == true) {
     if (param == false) {
-        parentElem.append(emptyElement);
-    } else {
-
-        parentElem.remove(document.querySelectorAll(".empty-card"));
+      parentElem.append(emptyElement);
+    }else {
+      parentElem.remove(document.querySelectorAll(".empty-card"));
     }
   }
 }
@@ -60,4 +59,3 @@ toggleCart.addEventListener("click", () => {
   }
 });
 
-function addToCart() {}

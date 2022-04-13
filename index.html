@@ -1,108 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <script src="js/script.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | E-commerce product page</title>
   <link rel="stylesheet" href="./css/style.css">
   <!-- <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
 </head>
+
 <body>
   <main class="main-container">
-    
+
     <header class="hdr-container">
       <div class="left-container-header">
         <div class="hide-show-menu-container">
           <div class="hide-show"></div>
         </div>
         <div class="logo"><img src="./images/logo.svg" alt="Sneckers"></div>
-        <div class="toggle-menu-wrapper" >
+        <div class="toggle-menu-wrapper">
           <div class="toggle-menu">
-            <a href="" class="links">Collections</a>
-            <a href="" class="links">Men</a>
-            <a href="" class="links">Women</a>
-            <a href="" class="links">About</a>
-            <a href="" class="links">Contact</a>
+            <div class="nav-wrapper">
+              <a href="" class="links">Collections</a>
+            </div>
+
+            <div class="nav-wrapper">
+              <a href="" class="links">Men</a>
+            </div>
+
+            <div class="nav-wrapper">
+              <a href="" class="links">Women</a>
+            </div>
+
+            <div class="nav-wrapper">
+              <a href="" class="links">About</a>
+            </div>
+
+            <div class="nav-wrapper">
+              <a href="" class="links">Contact</a>
+            </div>
+
           </div>
         </div>
       </div>
-        <div class="right-container-header">
-          <div class="cart-container r-items" ">
-            <img src="./images/icon-cart.svg" alt="Cart">
-          </div>
-          <div class="profile r-items">
-            <img src="./images/image-avatar.png" alt="Profile picture"  width="30px">
-          </div>
+      <div class="right-container-header">
+        <div class="cart-container r-items" ">
+            <img src=" ./images/icon-cart.svg" alt="Cart">
         </div>
-      </header>
-      <div class="cart">
-        <div class="cart-title">
-          <h3>Cart</h3>
-        </div>
-        <div class="cart-content-container">
+        <div class="profile r-items">
+          <img id="profile-pic" src="./images/image-avatar.png" alt="Profile picture" width="30px">
         </div>
       </div>
-      <div class="main-container">
-        <section class="lightbox">
-          <div class="lightbox-wrapper">
-            
-            <div class="prev-next-container prev">
-              <img src="./images/icon-previous.svg" alt="previous">
-            </div>
-            <div class="prev-next-container next">
-              <img src="./images/icon-next.svg" alt="next">
-            </div>
-            <img id="preview" src="images/image-product-1.jpg" alt="Poduct">
+    </header>
+
+    <div class="cart">
+      <div class="cart-title">
+        <h3>Cart</h3>
+      </div>
+      <div class="cart-content-container">
+      </div>
+    </div>
+
+    <div class="product-wrapper">
+      <section class="lightbox">
+        <div class="lightbox-wrapper">
+
+          <div class="prev-next-container prev">
+            <img src="./images/icon-previous.svg" alt="previous">
           </div>
-          <div class="all-photos">
-            <div class="photo-preview">
-              <img src="images/image-product-1-thumbnail.jpg">
-            </div>
-            <div class="photo-preview">
-              <img src="images/image-product-2-thumbnail.jpg">
-            </div>
-            <div class="photo-preview">
-              <img src="images/image-product-3-thumbnail.jpg">
-            </div>
-            <div class="photo-preview">
-              <img src="images/image-product-4-thumbnail.jpg">
+          <div class="prev-next-container next">
+            <img src="./images/icon-next.svg" alt="next">
+          </div>
+          <img id="preview" src="images/image-product-1.jpg" alt="Poduct">
+        </div>
+        <div class="all-photos">
+          <div class="photo-preview">
+            <img class="img-list" src="images/image-product-1-thumbnail.jpg">
+          </div>
+          <div class="photo-preview">
+            <img class="img-list" src="images/image-product-2-thumbnail.jpg">
+          </div>
+          <div class="photo-preview">
+            <img class="img-list" src="images/image-product-3-thumbnail.jpg">
+          </div>
+          <div class="photo-preview">
+            <img class="img-list" src="images/image-product-4-thumbnail.jpg">
+          </div>
+        </div>
+
+      </section>
+      <section class="info-container">
+        <h5 id="brand-name">SNEAKER COMPANY</h5>
+        <h1 class="title">Fall Limited Edition Sneakers</h1>
+        <p class="description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, the’ll withstand everything the weather can offer.
+        </p>
+        <div class="price-container">
+          <div class="price-wrapper">
+            <h2 id="price">$125.00</h2>
+            <div id="discount-box">
+              <h3>50%</h3>
             </div>
           </div>
-          
-        </section>
-        <section class="info-container">
-          <h5 id="brand-name">SNEAKER COMPANY</h5>
-          <h1 class="title">Fall Limited Edition Sneakers</h1>
-          <p class="description">
-            These low-profile sneakers are your perfect casual wear companion. Featuring a
-            durable rubber outer sole, the’ll withstand everything the weather can offer.
-          </p>
-          <div class="price-container">
-            <div class="price-wrapper">
-              <h2 id="price">$125.00</h2>
-              <div id="discount-box">
-                <h3>50%</h3>
-              </div>
-            </div>
-            <div class="full-price-wrapper">
-              <p id="full-price">$250.00</p>
-            </div>
+          <div class="full-price-wrapper">
+            <p id="full-price">$250.00</p>
           </div>
+        </div>
+        <div class="num-of-items-and-cart-wrapper">
           <div class="nr-of-items">
-            <div class="minus-nr-plus minus" ><img src="./images/icon-minus.svg" alt="Minus"></div>
+            <div class="minus-nr-plus minus"><img src="./images/icon-minus.svg" alt="Minus"></div>
             <div class="minus-nr-plus" id="num">0</div>
-            <div class="minus-nr-plus plus" ><img src="./images/icon-plus.svg" alt="Plus"></div>
+            <div class="minus-nr-plus plus"><img src="./images/icon-plus.svg" alt="Plus"></div>
           </div>
           <button id="addToCart">
-            <img src="./images/icon-cart-white.svg" id="white-cart" alt="Add to cart"> 
+            <img src="./images/icon-cart-white.svg" id="white-cart" alt="Add to cart">
             <div id="btn-text-wrapper">
               Add to cart
             </div>
           </button>
-        </section>
-      </div>
+        </div>
+      </section>
+    </div>
   </main>
 </body>
+
 </html>
